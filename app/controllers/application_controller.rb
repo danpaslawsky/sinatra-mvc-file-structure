@@ -7,7 +7,7 @@ class ApplicationController < Sinatra::Base
 
   get '/dog' do
     @dog = Dog.all
-  	erb :'dog/index.html.erb'
+  	erb :'dog/index.erb'
   end
 end
 
