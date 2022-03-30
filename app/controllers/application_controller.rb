@@ -5,9 +5,8 @@ class ApplicationController < Sinatra::Base
   	set :public_dir, "public"
   end
 
-  get '/dog' do
-    @dog = Dog.all
-  	erb :'dog/index.erb'
+  get '/' do
+  	erb :index
   end
 end
 
